@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin: 2px 0 2px 3px;
+      }
+      label {
+        display: block;
+      }
+
+      .checkbox-label {
+        display: inline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" name="email" required />
+      <label for="password">Password:</label>
+      <input type="password" name="password" required />
+      <label for="name">Name:</label>
+      <input type="text" name="name" required />
+      <label for="last name">Last Name:</label>
+      <input type="text" name="last name" required />
+      <label for="date of birth">Date of Birth:</label>
+      <input type="date" name="date of birth" />
+      <label for="telephone number">Telephone Number:</label>
+      <input type="tel" name="telephone number" required /><br />
+
+      <select name="plan" id="plan">
+        <option value="free">Free plan</option>
+        <optgroup label="Payment options">
+          <option value="price">$150</option>
+          <option value="price">$399</option>
+          <option value="price">$1,299</option>
+        </optgroup>
+      </select>
+      <input type="checkbox" name="pro" id="pro" value="pro"/>
+      <label class="checkbox-label" for="pro">Pro plan</label>
+      <label for="credit-card">Credit card number:</label>
+      <input
+        type="text"
+        name="credit-card"
+        id="credit-card"
+        placeholder="0000-0000-0000-0000"
+        required
+      />
+      <label for="cvc">CVC:</label>
+      <input type="text" name="cvc" id="cvc" placeholder="000" required/>
+      <label for="expDate">Expiration date:</label>
+      <input type="text" name="expDate" id="expDate" required/>
+      <label for="billingAddress">Billing address:</label>
+      <input
+        type="text"
+        name="billingAddress"
+        id="billingAddress"
+        placeholder="eg. Baker Street, 16"
+        required
+      /><br />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
